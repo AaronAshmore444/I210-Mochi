@@ -25,3 +25,5 @@ Content - The main page to show (Recipes/Dogs/DND/Magic) information.
 Contact Us - Page to input you Name, Phone, Email, ect.
 About - Gives a description of what the website is about and some info about us.
 Gallery - Image gallery of content.
+
+New

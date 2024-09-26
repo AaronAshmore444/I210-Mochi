@@ -1,4 +1,5 @@
 Mochi Group
+
 Aaron Ashmore - Leader
 Myranda Estes - Member
 
@@ -15,7 +16,7 @@ Description:
  Magic The Gathering - Website that rates playing cards.
 
 Site Structure:
-Index - Links to other pages. Banner for our topic
+Index - Links to other pages. Banner for our topic. Hero Image
 Content - The main page to show (Recipes/Dogs/DND/Magic) information.
      ie. Food Recipe instructions
      ie. Dogs facts 
@@ -24,4 +25,3 @@ Content - The main page to show (Recipes/Dogs/DND/Magic) information.
 Contact Us - Page to input you Name, Phone, Email, ect.
 About - Gives a description of what the website is about and some info about us.
 Gallery - Image gallery of content.
-

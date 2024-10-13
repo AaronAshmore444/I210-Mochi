@@ -61,10 +61,9 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid forestgreen;
+    border: 1px solid #803C3B;
 
-    flex-grow: 4;
-    flex-wrap: wrap;
+    
     
 }
 

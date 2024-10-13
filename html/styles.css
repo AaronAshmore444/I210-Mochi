@@ -1,0 +1,36 @@
+nav {
+    background-color: lightgoldenrodyellow;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid chocolate;
+    
+}
+
+ a {
+    color: chocolate;
+}
+
+div {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: lightgoldenrodyellow;
+    height: 200px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid chocolate;
+
+    flex-grow: 4;
+    flex-wrap: wrap;
+    
+}

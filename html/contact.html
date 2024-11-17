@@ -20,6 +20,50 @@
       </nav>
     </header>
 
+    <h2 id="cont">Contact Us</h2>
+
+    <form>
+      <section id="formS">
+        <h3>Contact information</h3>
+        <label>First Name:</label>
+        <input type="text" name="myName" id="myName" />
+        <p id="nameError"></p>
+        <br />
+        <label>Last Name:</label>
+        <input type="text" name="lName" id="lName" />
+        <p id="lNameError"></p>
+        <br />
+        <label>City:</label>
+        <input type="text" name="city" id="city" />
+        <p id="cityError"></p>
+        <br />
+        <label>State:</label>
+        <input type="text" name="state" id="state" />
+        <p id="stateError"></p>
+        <br />
+        <label>Phone:</label>
+        <input type="text" name="phone" id="phone" />
+        <p id="phoneError"></p>
+        <br />
+        <label>Email:</label>
+        <input type="text" name="myEmail" id="myEmail" />
+        <p id="emailError"></p>
+        <br />
+      </section>
+
+      <section id="formS">
+        <h3>Submit</h3>
+        <input
+          type="submit"
+          value="Submit Form"
+          id="submitBtn"
+          onclick="loginArea()"
+        />
+        <input type="reset" value="Clear Form" id="resetBtn" />
+        <h2 id="answerD"></h2>
+      </section>
+    </form>
+
     <footer>
       <a href="index.html">Index</a>
       <a href="infodog.html">Dog Information</a>
@@ -27,5 +71,6 @@
       <a href="contact.html">Contact Us</a>
       <a href="gallery.html">Image Gallery</a>
     </footer>
+    <script src="contact.js"></script>
   </body>
 </html>

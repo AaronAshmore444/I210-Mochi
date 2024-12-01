@@ -17,7 +17,7 @@ function validateForm(){
 
 
 //Email
-let emailVal = document.getElementById('myEmail').value;
+let emailVal = document.getElementById('email').value;
 let valEmail = /^([a-zA-Z0-9#!$%.]+)@[a-zA-Z0-9-]+.([a-zA-Z]){2,3}$/;
 if(!valEmail.test(emailVal)) {
     document.getElementById('emailError').innerText = 'You must enter a valid email address.'
@@ -39,20 +39,14 @@ if(!valState.test(stateVal)) {
 
 
 
-//First Name
-if(document.getElementById('myName').value == '') {
+//Full Name
+if(document.getElementById('fullName').value == '') {
     document.getElementById('nameError').innerText = 'You must enter a name.'
     validForm=false
 } else {
     document.getElementById('nameError').innerText = '';
 }
-//Last Name
-if(document.getElementById('lName').value == '') {
-    document.getElementById('lNameError').innerText = 'You must enter a name.'
-    validForm=false
-} else {
-    document.getElementById('lNameError').innerText = '';
-}
+
 
 
 //City

@@ -81,12 +81,6 @@ footer a {
 
 /* About */
 
-.aboutBoxes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  
-}
-
 .aboutHeader{
  color:black;
  text-align: center;

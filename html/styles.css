@@ -69,6 +69,11 @@ footer a {
   );
     background-size: 500px 500px;
     
+    
+}
+
+.dogPic img {
+  margin: 25px;
 }
 /* Index */
 

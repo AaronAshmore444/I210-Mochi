@@ -231,3 +231,23 @@ footer a {
   }
 
   /* Gallery */
+
+  /* Dog Information */
+  .doginfo{
+    padding: 10px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+  }
+  .doginfo img{
+    width: 300px;
+    height:200px;
+  }
+  .dogheading{
+    color:#7a853b;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+  }
+  .info{
+    background-color: antiquewhite;
+  }

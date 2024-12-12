@@ -2,8 +2,8 @@ import { app } from "./firebase.js";
 
 import {
   getFirestore,
-  collection,
   getDocs,
+  collection,
   addDoc,
   deleteDoc,
   updateDoc,
@@ -20,16 +20,16 @@ async function getsmallDogs() {
 
     sectionRef.innerHTML = "";
     for (let i = 0; i < smallDogsDocs.docs.length; i++) {
-        const smallDogs = smallDogsDocs.docs[i];
-        const smallDogsData = smallDogs.data();
+        const smallDog = smallDogsDocs.docs[i];
+        const smallDogData = smallDog.data();
 
         sectionRef.innerHTML += `
             <div>
-                <h4>${smallDogsData.Name}</h4>
-                <p>${smallDogsData.Size}</p>
+                <h4>${smallDogData.Name}</h4>
+                <p>${smallDogData.Size}</p>
                 <div>
-                    <button class="delete-button" data-smallDogs-id="${smallDogs.id}">Delete</button>
-                    <button class="update-button" data-smallDogs-id="${smallDogs.id}">Update Size</button>
+                    <button class="delete-button" data-smallDog-id="${smallDog.id}">Delete</button>
+                    <button class="update-button" data-smallDog-id="${smallDog.id}" >Update Size</button>
                 </div>
             </div>
         `;
@@ -38,34 +38,34 @@ async function getsmallDogs() {
     const deleteButtons = document.querySelectorAll(".delete-button");
 
     for (const deleteButton of deleteButtons) {
-        deleteButton.onclick = deletesmallDogs;
+        deleteButton.onclick = deletesmallDog;
     }
 
     const updateButtons = document.querySelectorAll(".update-button");
 
     for (const updateButton of updateButtons) {
-        updateButton.onclick = updatesmallDogsSize;
+        updateButton.onclick = updatesmallDogSize;
     }
 
 }
 
-async function deletesmallDogs(e) {
-    const smallDogsId = e.currentTarget.dataset.smallDogsId;
+async function deletesmallDog(e) {
+    const smallDogId = e.currentTarget.dataset.smallDogId;
     const smallDogsCollection = collection(db, "smallDogs");
-    const smallDogsDoc = doc(smallDogsCollection, smallDogsId);
-    await deleteDoc(smallDogsDoc);
+    const smallDogDoc = doc(smallDogsCollection, smallDogId);
+    await deleteDoc(smallDogDoc);
 
     getsmallDogs();
     
 }
 
-async function updatesmallDogsSize(e) {
-    const smallDogsId = e.currentTarget.dataset.smallDogsId;
+async function updatesmallDogSize(e) {
+    const smallDogId = e.currentTarget.dataset.smallDogId;
     const smallDogsCollection = collection(db, "smallDogs");
-    const smallDogsDoc = doc(smallDogsCollection, smallDogsId);
-    const newsmallDogsSize = prompt("New smallDogs Size?!");
+    const smallDogDoc = doc(smallDogsCollection, smallDogId);
+    const newsmallDogSize = prompt("New Dog Size?!");
 
-    await updateDoc(smallDogsDoc, { Size: newsmallDogsSize });
+    await updateDoc(smallDogDoc, { Size: newsmallDogSize });
 
     getsmallDogs();
 }

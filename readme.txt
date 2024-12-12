@@ -22,5 +22,9 @@ Gallery - Image gallery of content.
 GitHub Link: https://github.com/AaronAshmore444/I210-Mochi/blob/main/readme.txt
 
 Index Link: https://github.com/AaronAshmore444/I210-Mochi/blob/main/html/index.html
+Dog Info Link: https://github.com/AaronAshmore444/I210-Mochi/blob/main/html/infodog.html
+About Us Link: https://github.com/AaronAshmore444/I210-Mochi/blob/main/html/about.html
+Contact Us Link: https://github.com/AaronAshmore444/I210-Mochi/blob/main/html/contact.html
+Gallery Link: https://github.com/AaronAshmore444/I210-Mochi/blob/main/html/gallery.html
 
 test

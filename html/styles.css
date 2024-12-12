@@ -62,11 +62,11 @@ footer a {
     justify-content: center;
     width: 100%;
     height: 100%;
-    /* background-image: repeating-conic-gradient(
+     background-image: repeating-conic-gradient(
         rgba(250, 250, 210, 0.5) 0% 25%,
         rgba(128, 128, 59, 0.5) 25% 50%
         
-  ); */
+  ); 
     background-size: 500px 500px;
     
     
@@ -262,6 +262,7 @@ footer a {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 15px;
     border: 1px solid black;
+    color: #7a853b;
   }
 
   
@@ -278,12 +279,12 @@ footer a {
     color: antiquewhite;
   }
 
-  .delete-Button:hover  {
+  .delete-button:hover  {
     background-color: #803C3B;
     color: antiquewhite;
   }
 
-  .update-Button:hover  {
+  .update-button:hover  {
     background-color: #803C3B;
     color: antiquewhite;
   }

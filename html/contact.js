@@ -6,7 +6,7 @@ function validateForm(){
 
     //Validate Phone
     let phoneVal = document.getElementById('phone').value;
-    let valPhone = /^([0-9]){3}-[0-9]{3}-([0-9]){4}$/;
+    // let valPhone = /^([0-9]){3}-[0-9]{3}-([0-9]){4}$/;
     if(!valPhone.test(phoneVal)) {
         document.getElementById('phoneError').innerText ="Your phone number must be in the following format: 555-555-5555."
         validForm=false;
@@ -18,7 +18,7 @@ function validateForm(){
 
 //Email
 let emailVal = document.getElementById('email').value;
-let valEmail = /^([a-zA-Z0-9#!$%.]+)@[a-zA-Z0-9-]+.([a-zA-Z]){2,3}$/;
+// let valEmail = /^([a-zA-Z0-9#!$%.]+)@[a-zA-Z0-9-]+.([a-zA-Z]){2,3}$/;
 if(!valEmail.test(emailVal)) {
     document.getElementById('emailError').innerText = 'You must enter a valid email address.'
     validForm=false;
@@ -29,7 +29,7 @@ if(!valEmail.test(emailVal)) {
 
 //State
 let stateVal = document.getElementById('state').value;
-let valState = /^(AL)$|^(AK)$|^(AZ)$|^(AR)$|^(CA)$|^(CO)$|^(CT)$|^(DE)$|^(DC)$|^(FL)$|^(GA)$|^(HI)$|^(ID)$|^(IL)$|^(IN)$|^(IA)$|^(KS)$|^(KY)$|^(LA)$|^(ME)$|^(MD)$|^(MA)$|^(MI)$|^(MN)$|^(MS)$|^(MO)$|^(MT)$|^(NE)$|^(NV)$|^(NH)$|^(NJ)$|^(NM)$|^(NY)$|^(NC)$|^(ND)$|^(OH)$|^(OK)$|^(OR)$|^(PA)$|^(RI)$|^(SC)$|^(SD)$|^(TN)$|^(TX)$|^(UT)$|^(VT)$|^(VA)$|^(WA)$|^(WV)$|^(WI)$|^(WY)$/;
+// let valState = /^(AL)$|^(AK)$|^(AZ)$|^(AR)$|^(CA)$|^(CO)$|^(CT)$|^(DE)$|^(DC)$|^(FL)$|^(GA)$|^(HI)$|^(ID)$|^(IL)$|^(IN)$|^(IA)$|^(KS)$|^(KY)$|^(LA)$|^(ME)$|^(MD)$|^(MA)$|^(MI)$|^(MN)$|^(MS)$|^(MO)$|^(MT)$|^(NE)$|^(NV)$|^(NH)$|^(NJ)$|^(NM)$|^(NY)$|^(NC)$|^(ND)$|^(OH)$|^(OK)$|^(OR)$|^(PA)$|^(RI)$|^(SC)$|^(SD)$|^(TN)$|^(TX)$|^(UT)$|^(VT)$|^(VA)$|^(WA)$|^(WV)$|^(WI)$|^(WY)$/;
 if(!valState.test(stateVal)) {
     document.getElementById('stateError').innerText = 'You must use two characters and match a state abbreviation.'
     validForm=false;
@@ -61,9 +61,8 @@ if(document.getElementById('city').value == '') {
 
 //get values for name and city
 let nameVal = document.getElementById('myName').value;
-let lNameVal = document.getElementById('lName').value;
 let cityVal = document.getElementById('city').value;
-let tvalue = typeVal.value;
+
 
 
 console.log(typeof(nameVal));

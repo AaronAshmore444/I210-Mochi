@@ -137,10 +137,12 @@ footer a {
 
       #submitBtn:hover  {
         background-color: #803C3B;
+        color: antiquewhite;
       }
 
       #resetBtn:hover  {
         background-color: #803C3B;
+        color: antiquewhite;
       }
 
       #formS {
@@ -254,3 +256,35 @@ footer a {
   .info{
     background-color: antiquewhite;
   }
+
+  .dogList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 15px;
+    border: 1px solid black;
+  }
+
+  
+
+  .addDogButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .addButton:hover  {
+    background-color: #803C3B;
+    color: antiquewhite;
+  }
+
+  .delete-Button:hover  {
+    background-color: #803C3B;
+    color: antiquewhite;
+  }
+
+  .update-Button:hover  {
+    background-color: #803C3B;
+    color: antiquewhite;
+  }
+

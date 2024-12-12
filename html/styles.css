@@ -7,7 +7,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     border: 1px solid #803C3B;
-    
+    text-decoration: none;
 }
 
 .title {
@@ -110,7 +110,9 @@ footer a {
     margin-bottom: 16px;
     padding: 100px;
   }
-  
+  .aboutsection{
+    background-color: antiquewhite;
+  }
   .card {
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -123,7 +125,7 @@ footer a {
   }
   .aboutButton:hover {
     background-color: darkred; 
-    color: white;
+    color: rgb(29, 28, 28);
   }
   /* About */
 

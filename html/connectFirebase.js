@@ -63,6 +63,8 @@ async function updatesmallDogSize(e) {
     const smallDogId = e.currentTarget.dataset.smallDogId;
     const smallDogsCollection = collection(db, "smallDogs");
     const smallDogDoc = doc(smallDogsCollection, smallDogId);
+    console.log(smallDogId);
+    
     const newsmallDogSize = prompt("New Dog Size?!");
 
     await updateDoc(smallDogDoc, { Size: newsmallDogSize });

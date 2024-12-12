@@ -28,8 +28,8 @@ async function getsmallDogs() {
                 <h4>${smallDogData.Name}</h4>
                 <p>${smallDogData.Size}</p>
                 <div>
-                    <button class="delete-button" data-smallDog-id="${smallDog.id}">Delete</button>
-                    <button class="update-button" data-smallDog-id="${smallDog.id}" >Update Size</button>
+                    <button class="delete-button" data-small-dog-id="${smallDog.id}">Delete</button>
+                    <button class="update-button" data-small-dog-id="${smallDog.id}" >Update Size</button>
                 </div>
             </div>
         `;
@@ -63,8 +63,6 @@ async function updatesmallDogSize(e) {
     const smallDogId = e.currentTarget.dataset.smallDogId;
     const smallDogsCollection = collection(db, "smallDogs");
     const smallDogDoc = doc(smallDogsCollection, smallDogId);
-    console.log(smallDogId);
-    
     const newsmallDogSize = prompt("New Dog Size?!");
 
     await updateDoc(smallDogDoc, { Size: newsmallDogSize });
